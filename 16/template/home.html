@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block konten %}
+    <h1>KACAMATA</h1>
+    <form action="/simpan" method="post">
+        <input type="text" name="nama" placeholder="enter nama.."><br>
+        <input type="number" name="minus" min="-0,25" max="-108" placeholder="enter minus.."><br>
+        <textarea name="jenis" placeholder="enter jenis.." ></textarea><br>
+        <textarea name="warna" placeholder="enter warna.."></textarea><br>
+        <button type="submit">SEND</button>
+    </form>
+{% endblock %}
